@@ -1,0 +1,49 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+main {
+    position:static; 
+    margin: 60px auto; 
+    width: calc(100% - 50px);
+    
+}
+
+body {
+    /* max-width: 1200px; */
+    margin: 0 auto;
+}
+    
+.welcome {
+    grid-column: span 12;
+    justify-self: center;
+    align-self: center;
+
+}
+
+.grid {
+    display: grid;
+    gap: 30px;
+}
+
+table {
+    width: 100%;
+}
+table tr:hover {
+    box-shadow: none;
+}
+
+.user-nav .active {
+    background: crimson;
+    padding: 5px 10px;
+    color: #fff;
+    border-radius: 6px;
+}
+
+.user-nav .active:hover {
+    background: #a10020;
+    color: #fff;
+}

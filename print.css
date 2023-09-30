@@ -1,0 +1,164 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Public Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    /* background: gainsboro; */
+}
+*, 
+*::after, 
+*::before {
+    box-sizing: border-box;
+}
+.container {
+    min-height: 100vh;
+    width: 8.27in;
+    margin: 0 auto;
+    /* background: #fff; */
+    overflow-y: auto;
+}
+
+.container header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* border-bottom: 1px solid gainsboro; */
+
+}
+
+header h1 {
+    text-transform: capitalize;
+    margin-bottom: 0;
+    letter-spacing: 2px;
+    
+}
+
+header h3 {
+    border-bottom: 1px solid #000;
+    letter-spacing: 2px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+p {
+
+    margin: 20px;
+}
+
+.green {
+    color: green;
+}
+
+.red {
+    color: crimson;
+}
+
+.paid {
+    margin: 25px;
+}
+
+.paid h3 {
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    /* margin: 15px */
+}
+  
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    box-sizing: border-box;
+    
+}
+  
+.paid h4 {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.paid h4 span {
+    margin-right: 60px
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    /* margin: 0 auto;
+    margin-bottom: 10px;
+    */
+}
+
+.buttons a {
+    display: inline-block;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    border: none;
+    padding: 5px 7px;
+    background: #530202;
+    color: #fff;
+    border-radius: 5px; 
+    margin-right: 10px;
+    text-decoration: none;
+}
+.buttons a i {
+    margin-right: 5px;
+    font-size: 20px;
+}
+.buttons .printBtn {
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    padding: 5px 7px;
+    background: #00008d;
+    color: #fff;
+    border-radius: 5px; 
+    cursor: pointer;
+}
+.buttons .printBtn i {
+    margin-right: 5px;
+}
+
+.buttons .printBtn:hover {
+    cursor: pointer;
+    background:  #1717c9;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #ddd; 
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background: #fff; 
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #fff; 
+  }
+
+  @media print {
+    body * {
+        visibility: hidden;
+    }
+    .print, .print * {
+        visibility: visible;
+    }
+    .hidden, .hidden * {
+        visibility: visible;
+    }
+  }
